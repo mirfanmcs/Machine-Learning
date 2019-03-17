@@ -33,7 +33,7 @@ y refers to the profit in $10,000s
 ### Plot data calling plotData custom function
 `$ plotData(x,y)`
 
-![Figure 1](figures/figure1.png)
+![Plot](figures/figure1.png)
 
 # Call cost function computeCost to calculate J(&theta;)
 
@@ -97,7 +97,7 @@ Calculate h<sub>&theta;</sub>(x) with calculated &theta; value above.
 `$ legend ("Training data","Linear regression","location","southeast")`
 
 
-![Figure 1](figures/figure2.png)
+![Plot](figures/figure2.png)
 
 
 
@@ -138,7 +138,18 @@ transpose J_vals before calling surf, or else the axes will be flipped
 `$ zlabel('J(\theta_1)')`
 
 
-![Figure 1](figures/figure3.png)
+![Surface Plot](figures/figure3.png)
+
+To see local minimum on surface add plot:
+
+`$ hold on`
+
+`$ plot(theta(1), theta(2), 'rx', 'MarkerSize', 5, 'LineWidth', 2)`
+
+![Surface Plot](figures/figure5.png)
+
+Rotate the surface to see red cross X at the bottom. This is minimum J(&theta;) 
+
 
 ## Contour plot
 
@@ -155,4 +166,4 @@ Plot J_vals as 15 contours spaced logarithmically between 0.01 and 100
 `$ plot(theta(1), theta(2), 'rx', 'MarkerSize', 5, 'LineWidth', 2)`
 
 
-![Figure 1](figures/figure4.png)
+![Contour plot](figures/figure4.png)
