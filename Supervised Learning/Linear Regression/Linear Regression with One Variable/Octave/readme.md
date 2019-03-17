@@ -36,6 +36,9 @@ x refers to the population size in 10,000s
 
 y refers to the profit in $10,000s
 
+Note: Octave is 1 index based so first column is index 1. 
+
+
 `>>> x = data(:, 1)`
 
 `>>> y = data(:, 2)`
