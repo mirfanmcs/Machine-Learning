@@ -1,7 +1,13 @@
 Supervised Learning - Linear Regression with One Variable (Octave)
 ===================================================================
 
-Run following commands in Octave
+Note: You can run below code in either Octave or Matlab.
+
+Octave is a free software for mathematics and plotting. You can install Octave from [here](https://www.gnu.org/software/octave/)
+
+
+Run following commands in Octave, and in the local path where all files are present in local Octave folder. 
+
 
 `$ octave`
 
