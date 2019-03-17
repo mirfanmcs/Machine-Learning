@@ -33,6 +33,11 @@ y refers to the profit in $10,000s
 ### Plot data calling plotData custom function
 `$ plotData(x,y)`
 
+Note: Octave prompt shoud be in the same path where custom functions (plotData or other custom function we are going to use below) are.
+
+To check the current path run `$ pwd` in Octave prompt. You can use normal linux commands i.e. `ls` and `cd` to check / change paths. 
+
+
 ![Plot](figures/figure1.png)
 
 # Call cost function computeCost to calculate J(&theta;)
