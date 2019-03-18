@@ -74,11 +74,18 @@ To check the current path run `pwd` in Octave prompt. You can use normal linux c
 
 `>>> J = computeCost(X, y, theta)`
 
+
+Expected value: 32.073
+
+
 ### Set &theta;<sub>o</sub> = -1 and &theta;<sub>1</sub> = 2 and call cost function again
 
 `>>> theta = [-1 ; 2]`
 
 `>>> J = computeCost(X, y, theta)`
+
+Expected value: 54.242
+
 
 # Gradient descent 
 Gradient descent is used to minimize cost function J
