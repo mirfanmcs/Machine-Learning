@@ -75,7 +75,7 @@ To check the current path run `pwd` in Octave prompt. You can use normal linux c
 `>>> J = computeCost(X, y, theta)`
 
 
-Expected value: 32.073
+Expected value: `32.073`
 
 
 ### Set &theta;<sub>o</sub> = -1 and &theta;<sub>1</sub> = 2 and call cost function again
@@ -84,7 +84,7 @@ Expected value: 32.073
 
 `>>> J = computeCost(X, y, theta)`
 
-Expected value: 54.242
+Expected value: `54.242`
 
 
 # Gradient descent 
@@ -111,7 +111,7 @@ Cost function J(&theta;) will decrease and at the end of iterations will give co
 This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
 
 
-Expected value of &theta; is &theta;<sub>o</sub> = -3.6303 and &theta;<sub>1</sub> = 1.1664
+Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.6303, 1.1664)`
 
 # Plot h<sub>&theta;</sub>(x)
 
