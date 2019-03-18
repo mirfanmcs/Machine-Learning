@@ -62,6 +62,10 @@ To check the current path run `pwd` in Octave prompt. You can use normal linux c
 
 `>>> x = [ones(length(data),1),data(:,1)]`
 
+
+`>>> y = data(:, 2)`
+
+
 ### Set &theta;<sub>o</sub> and &theta;<sub>1</sub> to zero (2x1 vector)
 
 `>>> theta = zeros(2, 1)`
