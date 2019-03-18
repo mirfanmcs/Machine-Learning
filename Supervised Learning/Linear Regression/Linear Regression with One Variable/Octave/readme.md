@@ -88,7 +88,7 @@ Expected value: `54.242`
 
 
 # Gradient descent 
-Gradient descent is used to minimize cost function J.
+Gradient descent is used to minimize cost function J(&theta;).
 
 ### Initialize x and y
 `>>> x = [ones(length(data),1),data(:,1)]`
