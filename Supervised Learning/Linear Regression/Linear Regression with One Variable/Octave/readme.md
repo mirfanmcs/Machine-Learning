@@ -139,9 +139,13 @@ Using calculated h<sub>&theta;</sub>(x)
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub>
 
 
-`>>> predict1 = [1, 3.5] * theta;  %using vectorisation` 
+`>>> predict1 = [1, 3.5] * theta  %using vectorisation` 
+
+Expected value: `0.45198`
 
 `>>> predict2 = [1, 7] * theta`
+
+Expected value: `4.5342`
 
 
 # Visualizing J(&theta;)
