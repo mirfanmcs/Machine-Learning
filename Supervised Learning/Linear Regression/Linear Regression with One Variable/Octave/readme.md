@@ -32,6 +32,9 @@ Load data
 `>>> data = load('data.txt')`
 
 ### Set X and y
+
+In our test data: 
+
 X refers to the population size in 10,000s
 
 y refers to the profit in $10,000s
