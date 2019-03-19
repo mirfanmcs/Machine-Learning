@@ -182,9 +182,12 @@ To see local minimum on surface add plot:
 
 `>>> plot(theta(1), theta(2), 'rx', 'MarkerSize', 5, 'LineWidth', 2)`
 
+Rotate the surface to see red cross X at the bottom. This is minimum J(&theta;) for (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.6303, 1.1664)`
+
+
 ![Surface Plot](figures/figure5.png)
 
-Rotate the surface to see red cross X at the bottom. This is minimum J(&theta;) for (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.6303, 1.1664)`
+
 
 
 ## Contour plot
