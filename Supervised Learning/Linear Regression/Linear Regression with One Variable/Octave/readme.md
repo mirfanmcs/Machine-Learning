@@ -165,7 +165,9 @@ transpose J_vals before calling surf, or else the axes will be flipped
 ## Surface Plot
 `>>> figure`
 
-`>>> surf(theta0_vals, theta1_vals, J_vals)`
+`>>> h = surf(theta0_vals, theta1_vals, J_vals);`
+
+`>>>  set (h, "FaceColor", "none", "EdgeLighting", "gouraud")`
 
 `>>> xlabel('\theta_0')`
 
@@ -173,19 +175,17 @@ transpose J_vals before calling surf, or else the axes will be flipped
 
 `>>> zlabel('J(\theta)')`
 
-
-![Surface Plot](figures/figure3.png)
-
 To see local minimum on surface add plot:
 
 `>>> hold on`
 
 `>>> plot(theta(1), theta(2), 'rx', 'MarkerSize', 5, 'LineWidth', 2)`
 
-Rotate the surface to see red cross X at the bottom. This is minimum J(&theta;) for (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.6303, 1.1664)`
+
+Red cross X at the bottom is the minimum J(&theta;) for (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.6303, 1.1664)`
 
 
-![Surface Plot](figures/figure5.png)
+![Surface Plot](figures/figure3.png)
 
 
 
@@ -205,5 +205,9 @@ Plot J_vals as 15 contours spaced logarithmically between 0.01 and 100
 `>>> plot(theta(1), theta(2), 'rx', 'MarkerSize', 5, 'LineWidth', 2)`
 
 Where (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.6303, 1.1664)`
+
+
+Red cross X is the minimum J(&theta;) for (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.6303, 1.1664)`
+
 
 ![Contour plot](figures/figure4.png)
