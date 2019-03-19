@@ -31,15 +31,15 @@ Load data
 
 `>>> data = load('data.txt')`
 
-### Set x and y
-x refers to the population size in 10,000s
+### Set X and y
+X refers to the population size in 10,000s
 
 y refers to the profit in $10,000s
 
 Note: Octave is 1 index based so first column is index 1. 
 
 
-`>>> x = data(:, 1)`
+`>>> X = data(:, 1)`
 
 `>>> y = data(:, 2)`
 
@@ -47,7 +47,7 @@ Note: Octave is 1 index based so first column is index 1.
 
 
 ### Plot data calling plotData custom function
-`>>> plotData(x,y)`
+`>>> plotData(X,y)`
 
 Note: Octave prompt shoud be in the same path where custom functions (plotData or other custom function we are going to use below) are.
 
@@ -58,9 +58,9 @@ To check the current path run `pwd` in Octave prompt. You can use normal linux c
 
 # Call cost function computeCost to calculate J(&theta;)
 
-### Add 1 as first column to matrix 'x' for x<sub>o</sub> = 1 
+### Add 1 as first column to matrix 'X' for x<sub>o</sub> = 1 
 
-`>>> x = [ones(length(data),1),data(:,1)]`
+`>>> X = [ones(length(data),1),data(:,1)]`
 
 
 `>>> y = data(:, 2)`
@@ -90,8 +90,8 @@ Expected value: `54.242`
 # Gradient descent 
 Gradient descent is used to minimize cost function J(&theta;).
 
-### Initialize x and y
-`>>> x = [ones(length(data),1),data(:,1)]`
+### Initialize X and y
+`>>> X = [ones(length(data),1),data(:,1)]`
 
 `>>> y = data(:, 2)`
 
@@ -103,7 +103,7 @@ Gradient descent is used to minimize cost function J(&theta;).
 
 `>>> alpha = 0.01`
 
-`>>> [theta, J_history] = gradientDescent(x, y, theta, alpha, iterations)`
+`>>> [theta, J_history] = gradientDescent(X, y, theta, alpha, iterations)`
 
 
 Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
@@ -117,14 +117,14 @@ Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.6
 
 Calculate h<sub>&theta;</sub>(x) with calculated &theta; value above.
 
-`>>> hx = x * theta`
+`>>> hx = X * theta`
 
 ### Plot Data
-`>>> plotData(x(:,2),y)  %calling plotData custom function`
+`>>> plotData(X(:,2),y)  %calling plotData custom function`
 
 `>>> hold on  %overlay on top of previous figure`
 
-`>>> plot(x(:,2),hx)`
+`>>> plot(X(:,2),hx)`
 
 `>>> legend ("Training data","Linear regression","location","southeast")`
 
@@ -154,7 +154,7 @@ Expected value: `4.5342`
 
 Calculate J(&theta;) by calling custom function calculateJtheta
 
-`>>> [theta0_vals,theta1_vals,J_vals] = calculateJtheta(x, y)`
+`>>> [theta0_vals,theta1_vals,J_vals] = calculateJtheta(X, y)`
 
 Because of the way meshgrids work in the surf command, we need to
 transpose J_vals before calling surf, or else the axes will be flipped
@@ -171,7 +171,7 @@ transpose J_vals before calling surf, or else the axes will be flipped
 
 `>>> ylabel('\theta_1')`
 
-`>>> zlabel('J(\theta_1)')`
+`>>> zlabel('J(\theta)')`
 
 
 ![Surface Plot](figures/figure3.png)
