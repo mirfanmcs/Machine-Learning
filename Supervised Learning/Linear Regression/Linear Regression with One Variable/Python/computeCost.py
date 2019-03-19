@@ -5,7 +5,7 @@ def computeCost(X, y, theta):
     # Calculate cost function J of theta J(theta) using theta as the
     #   parameter for linear regression to fit the data points in X and y
 
-    # Matrix X is a single feature training data. Append matrix X with 1 for x0=1
+    # Before calling function, append matrix X with 1 for x0=1
     # Vector y is the known value/label of training data
 
     # Algorithm:
