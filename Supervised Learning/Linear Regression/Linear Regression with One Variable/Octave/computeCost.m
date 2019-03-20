@@ -3,6 +3,9 @@ function J = computeCost(X, y, theta)
 % Calculate cost function J of theta J(theta) using theta as the
 %   parameter for linear regression to fit the data points in X and y
 
+% Vectorisation implementation. Applicable for any no for features. 
+% Theta should be a nx1 vector where n = No of feature + 1   
+
 % Before calling function, append matrix X with 1 for x0=1
 % Vector y is the known value/label of training data
    
@@ -12,7 +15,6 @@ function J = computeCost(X, y, theta)
 %     another way to calculate h(x) is using the matrix. h(x)= x * theta 
 %            where theta is 2x1 vector  or transponse of 1x1 matrix 
 
-% Vectorization implementation which is more efficient 
 
 m = size(X,1); % number of training examples 
 J = 0;  % initialize J to zero
