@@ -68,6 +68,22 @@ This will give the parameters (value of &theta;) to be used for hypothesis h<sub
 
 Expected value of &theta; (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.63029144, 1.16636235)`
 
+# Plot the convergence graph
+
+Find learning rates (&alpha;) that converges quickly. In our example we choose &alpha; = 0.01 with 1500 iterations. Graph below shows good convergence.
+
+Run plotConvergence.py from command prompt:
+
+`$ python3 plotConvergence.py`
+
+Script will call the plotConvergence function which will do following:
+* Call gradientDescent function from gradientDescent.py module to return J_history 
+* Plot J(&theta;) against Number of iterations (`1500`)
+
+
+![Plot](figures/figure5.png)
+
+
 # Plot h<sub>&theta;</sub>(x)
 
 Run plot_H_Theta.py from command prompt:
