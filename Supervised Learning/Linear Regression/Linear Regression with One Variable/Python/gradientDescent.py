@@ -2,38 +2,29 @@ import loadData as data
 import numpy as np
 import computeCost as cost
 
-# Gradient descent is used to minimize cost function J
-# Implementation for single variable/feature
-
 def gradientDescent(X, y, theta, alpha, num_iters):
+    # Gradient descent is used to minimize cost function J
+    # Vectorisation implementation. Applicable for any no for features. 
+    # Theta should be a nx1 vector where n = No of feature + 1 
+
     #GRADIENTDESCENT Performs gradient descent to learn theta
     #   theta = GRADIENTDESCENT(X, y, theta, alpha, num_iters) updates theta by
     #   taking num_iters gradient steps with learning rate alpha
 
     # Algorithm
-    # theta_0= theta_0 - alpha * (1/m) Sum [i=1 to m] (h(x)-y)*x_0
-    # theta_1= theta_1 - alpha * (1/m) Sum [i=1 to m] (h(x)-y)*x_1
-    #    where x_0=1
+    # theta_i= theta_i - alpha * (1/m) Sum [i=1 to m] (h(x)-y)*x_i
+    #    where i= training data 
 
-    # Vectorization implementation which is more efficient
 
     m = y.size  # number of training examples
     J_history = np.zeros((num_iters, 1))
 
-
-
     for iter in range(num_iters):
-        h_x = X * theta # computing h(x)
-        sqrErrors = h_x-y
 
-        theta_0 = theta[0,0]
-        theta_1 = theta[1,0]
-
-        temp_0 = theta_0 - alpha * (1./m) * np.sum(np.multiply(sqrErrors,X[:,0]), axis=0)[0,0]
-        temp_1 = theta_1 - alpha * (1./m) * np.sum(np.multiply(sqrErrors,X[:,1]), axis=0)[0,0]
-
-        theta[0,0] = temp_0
-        theta[1,0] = temp_1
+        hx = X * theta  # computing h(x)
+        sqrErrors = hx - y
+        newX = sqrErrors.T * X
+        theta = theta - ((alpha/m) * newX.T)
 
         # Save the cost J in every iteration
         J_history[iter,0] = cost.computeCost(X, y, theta)
