@@ -54,11 +54,9 @@ Run gradientDescent.py from command prompt:
 
 Script will call the gradientDescent function with following values: 
 
-(&theta;<sub>o</sub>, &theta;<sub>1</sub>) =  `(0,0)`  
-
-`iterations = 1500`
-
-`alpha = 0.01`
+* (&theta;<sub>o</sub>, &theta;<sub>1</sub>) =  `(0,0)`  
+* `iterations = 1500`
+* `alpha = 0.01`
 
 
 Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
