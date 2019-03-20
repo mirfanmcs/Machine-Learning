@@ -22,6 +22,8 @@ X refers to the population size in 10,000s
 
 y refers to the profit in $10,000s
 
+Note: Python is 0 index based so first column is index 0. 
+
 
 ### Plot data calling plotData custom function
 
