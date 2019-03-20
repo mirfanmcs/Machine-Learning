@@ -116,6 +116,26 @@ This will give the parameters (value of &theta;) to be used for hypothesis h<sub
 
 Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.6303, 1.1664)`
 
+
+# Plot the convergence graph
+
+Find learning rates (&alpha;) that converges quickly. In our example we choose &alpha; = 0.01 with 1500 iterations. Graph below shows good convergence.
+
+
+`>>> figure`
+
+`>>> plot(1:numel(J_history), J_history, '-b', 'LineWidth', 2)`
+
+`>>> xlabel('Number of iterations')`
+
+`>>> ylabel('J(\theta)')`
+
+`>>> title('Convergence of J(\theta)')`
+
+
+![Plot](figures/figure5.png)
+
+
 # Plot h<sub>&theta;</sub>(x)
 
 Calculate h<sub>&theta;</sub>(x) with calculated &theta; value above.
