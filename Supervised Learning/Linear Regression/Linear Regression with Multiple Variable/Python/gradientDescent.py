@@ -43,7 +43,7 @@ def gradientDescent():
     # Calculate for theta [0,0,0]
     theta = np.zeros((3, 1))
     alpha = 0.01
-    iterations = 400
+    iterations = 1500
 
     theta, J_history = calculateGradientDescent(X_norm, data.y, theta, alpha, iterations)
 
