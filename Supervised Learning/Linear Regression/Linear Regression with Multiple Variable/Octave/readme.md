@@ -116,7 +116,7 @@ Normalize features:
 `>>> theta = zeros(3, 1)  %No of features + 1`
 
 ### Call Gradient descent function 
-`>>> iterations = 400`
+`>>> iterations = 1500`
 
 `>>> alpha = 0.01`
 
@@ -128,7 +128,8 @@ Cost function J(&theta;) will decrease and at the end of iterations will give co
 This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
 
 
-Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) = `(334302.06399, 100087.11601, 3673.54845)`
+Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) = `(340412.56301, 110540.56655, -6558.99055)`
+
 
 # Plot the convergence graph
 
@@ -171,9 +172,9 @@ h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>
 `>>> price = X_predict * theta`
 
 
-Expected value: `289314.62034`
+Expected value: `293101.05686`
 
-Estimated price of a 1650 sq-ft, 3 bedroom house using Gradient Descent is: `289314.62034`
+Estimated price of a 1650 sq-ft, 3 bedroom house using Gradient Descent is: `293101.05686`
 
 
 # Normal Equation 
