@@ -1,8 +1,6 @@
 import loadData as data
 import numpy as np
 
-  
-
 def computeCost(X, y, theta):
     # Calculate cost function J of theta J(theta) using theta as the
     #   parameter for linear regression to fit the data points in X and y
