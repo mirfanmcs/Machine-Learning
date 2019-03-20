@@ -102,6 +102,9 @@ Expected value for  (x<sub>o</sub>,</sub>x<sub>1</sub>) (1, 3.5): `0.45197679`
 
 Expected value for  (x<sub>o</sub>,</sub>x<sub>1</sub>) (1, 7): `4.53424501`
 
+For population = 35,000, we predict a profit of 4519.767868
+
+For population = 70,000, we predict a profit of 45342.450129
 
 
 
