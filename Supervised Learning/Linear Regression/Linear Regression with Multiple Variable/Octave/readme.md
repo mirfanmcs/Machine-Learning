@@ -133,7 +133,7 @@ Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<
 
 # Plot the convergence graph
 
-Find learning rates (&alpha;) that converges quickly. In our example we choose &alpha; = 0.01 with 400 iterations. Graph below shows good convergence.
+Find learning rates (&alpha;) that converges quickly. In our example we choose &alpha; = 0.01 with 1500 iterations. Graph below shows good convergence.
 
 
 `>>> figure`
