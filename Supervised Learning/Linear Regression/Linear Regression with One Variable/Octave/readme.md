@@ -146,9 +146,14 @@ h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>
 
 Expected value: `0.45198`
 
+For population = 35,000, we predict a profit of 4519.767868
+
+
 `>>> predict2 = [1, 7] * theta`
 
 Expected value: `4.5342`
+
+For population = 70,000, we predict a profit of 45342.450129
 
 
 # Visualizing J(&theta;)
