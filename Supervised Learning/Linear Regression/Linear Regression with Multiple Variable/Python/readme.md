@@ -65,7 +65,7 @@ Run gradientDescent.py from command prompt:
 Script will call the gradientDescent function with following values:
 
 * (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) =  `(0,0,0)`  
-* iterations = `400`
+* iterations = `1500`
 * &alpha; = `0.01`
 
 Function will add 1 as first column to normalized X for x<sub>o</sub> = 1.
@@ -74,11 +74,13 @@ Cost function J(&theta;) will decrease and at the end of iterations will give co
 
 This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
 
-Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) = `(334302.06399328, 99411.44947359, 3267.01285407)`
+Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) = `(340412.56301439, 109370.05670466, -6500.61509507)`
+
+
 
 # Plot the convergence graph
 
-Find learning rates (&alpha;) that converges quickly. In our example we choose &alpha; = 0.01 with 400 iterations. Graph below shows good convergence.
+Find learning rates (&alpha;) that converges quickly. In our example we choose &alpha; = 0.01 with 1500 iterations. Graph below shows good convergence.
 
 Run plotConvergence.py from command prompt:
 
@@ -88,7 +90,7 @@ Script will call the plotConvergence function which will do following:
 * Normalize X  
 * Function will add 1 as first column to normalized X for x<sub>o</sub> = 1.
 * Call gradientDescent function from gradientDescent.py module to return J_history 
-* Plot J(&theta;) against Number of iterations
+* Plot J(&theta;) against Number of iterations (`1500`)
 
 
 ![Plot](figures/figure1.png)
@@ -116,9 +118,9 @@ Script will call the predictBasedOnGradientDescent function which will do follow
 * Calculate  h<sub>&theta;</sub>(x) using h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub>
 
 
-Expected value: `289221.54737122`
+Expected value: `293098.46667577`
 
-Estimated price of a 1650 sq-ft, 3 bedroom house using Gradient Descent is: `289221.54737122`
+Estimated price of a 1650 sq-ft, 3 bedroom house using Gradient Descent is: `293098.46667577`
 
 
 # Normal Equation 
