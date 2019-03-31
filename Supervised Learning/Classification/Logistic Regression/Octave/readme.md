@@ -66,8 +66,6 @@ To check the current path run `pwd` in Octave prompt. You can use normal linux c
 
 Sigmoid / Logistic function is defined as: 
 
-logistic regression hypothesis is defined as:
-
 h<sub>&theta;</sub>(x) = g(&theta;<sup>T</sup> x)
 
 Where function g is the sigmoid function. 
