@@ -45,7 +45,7 @@ Run computeCost.py from command prompt:
 `$ python3 computeCost.py`
 
 Script will call the computeCost function with following values:
-* (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) =  `(0,0)` 
+* (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) =  `(0,0,0)` 
 * (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) = `(-1,2,3)`. 
 
 Function will add 1 as first column to normalized X for x<sub>o</sub> = 1.
