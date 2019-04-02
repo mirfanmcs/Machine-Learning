@@ -26,7 +26,6 @@ for iter = 1:num_iters
     newX = sqrErrors' * X;
     theta = theta - ((alpha) * newX');
 
-    costFunction(theta, X, y)
    
     % Save the cost J in every iteration    
     [J_history(iter), grad] = costFunction(theta, X, y);
