@@ -68,7 +68,7 @@ Script will call the gradientDescent function with following values:
 * iterations = `1500`
 * &alpha; = `0.01`
 
-Function will add 1 as first column to normalized X for x<sub>o</sub> = 1.
+Function will first normalize X and then add 1 as first column to normalized X for x<sub>o</sub> = 1.
 
 Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
 
