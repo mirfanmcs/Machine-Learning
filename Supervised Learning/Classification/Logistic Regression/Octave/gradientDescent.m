@@ -24,7 +24,7 @@ for iter = 1:num_iters
 
     sqrErrors = h_x - y;
     newX = sqrErrors' * X;
-    theta = theta - ((alpha) * newX');
+    theta = theta - (alpha * newX');
 
    
     % Save the cost J in every iteration    
