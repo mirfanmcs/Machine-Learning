@@ -5,7 +5,7 @@ import loadData as data
 import optimizeTheta as optTheta
 
 
-def plotDecisionBoundary(p,theta, X, y):
+def plotDecisionBoundary(p,theta, X):
     # Plotting the decision boundary: two points, draw a line between
     # Decision boundary occurs when h = 0, or when
     # theta0 + theta1*x1 + theta2*x2 = 0
@@ -24,7 +24,7 @@ def main():
     thetaOptimized, costOptimized = optTheta.optimizeTheta()
 
     plot.figure()
-    plotDecisionBoundary(plot, thetaOptimized, data.X, data.y)
+    plotDecisionBoundary(plot, thetaOptimized, data.X)
     plot.show()
 
 
