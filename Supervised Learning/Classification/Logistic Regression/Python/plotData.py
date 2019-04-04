@@ -17,10 +17,6 @@ def plotData(p, X, y):
 
     p.plot(X[neg, 0], X[neg, 1], 'ko', markerfacecolor='y', markersize=6,label='Not admitted')
 
-
-
-    #legend('Admitted', 'Not admitted')
-
     p.xlabel('Exam 1 score')
     p.ylabel('Exam 2 score')
     p.title('Scatter plot of training data')
