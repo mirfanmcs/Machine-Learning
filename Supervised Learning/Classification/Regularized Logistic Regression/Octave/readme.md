@@ -105,7 +105,7 @@ Expected value of cost J: `0.69315`
 Expected value of first 5 gradient:  `0.008474576`, `0.018788093`, `0.000077771`, `0.050344640`, `0.011501331`
 
  
-### Set initial &theta; to zero
+### Set initial &theta; to ones
 
 `>>> theta = ones(size(X,2),1)`
 
