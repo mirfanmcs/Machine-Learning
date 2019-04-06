@@ -121,6 +121,24 @@ Expected value of cost J: `3.1645`
 
 Expected value of first 5 gradient:  `0.346045`, `0.161352`, `0.194796`, `0.226863`, `0.092186`
 
+# Advanced Optimization
+
+Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent.
+
+`>>> initial_theta = zeros(size(X, 2), 1)`
+
+### Set Options
+`>>> options = optimset('GradObj', 'on', 'MaxIter', 400)`
+
+`>>> lambda = 1`
+
+### Optimize
+`>>> [theta, J, exit_flag] = fminunc(@(t)(costFunctionReg(t, X, y, lambda)), initial_theta, options)`
+
+
+Expected value of cost: `0.52900`
+
+
 
 # Regularization and Accuracies 
 
