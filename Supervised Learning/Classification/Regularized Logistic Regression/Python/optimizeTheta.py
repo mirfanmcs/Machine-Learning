@@ -31,7 +31,7 @@ def main():
     thetaOptimized, costOptimized = optimizeTheta(lmda=1)
 
     print(costOptimized)
-    #Expected value of cost: 0.6930084
+    #Expected value of cost: 0.52900273
 
 
 
