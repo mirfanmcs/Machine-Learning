@@ -136,7 +136,7 @@ Use of advanced optimization algorithms is another technique to optimize cost fu
 `>>> [theta, J, exit_flag] = fminunc(@(t)(costFunctionReg(t, X, y, lambda)), initial_theta, options)`
 
 
-Expected value of cost: `0.52900`
+Expected value of cost (&lambda; = 1): `0.52900`
 
 
 
