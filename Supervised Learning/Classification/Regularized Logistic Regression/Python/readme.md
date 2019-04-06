@@ -68,7 +68,7 @@ Run costFunctionReg.py from command prompt:
 Script will call the costFunctionReg function which will do following:
 * Call `mapFeature` function in `mapFeature.py` module to map feature to 6 degree polynomial
 * Calculate cost for &lambda; values `1` and `10`
-* Expected values `0.69314718`, `0.86410915`
+* Expected values `0.69314718`, `3.16450933`
 
 # Advanced Optimization
 
@@ -81,9 +81,9 @@ Run optimizeTheta.py from command prompt:
 `$ python3 optimizeTheta.py`
 
 Script will call the optimizeTheta function which will do following:
-* Call `minimize` of `scipy` library and pass costFunction to calculate cost 
+* Call `minimize` of `scipy` library and pass costFunctionReg to calculate cost for &lambda; = 1 
 
-Expected value of cost: `0.6930084`
+Expected value of cost: `0.52900273`
 
 
 # Regularization and Accuracies 
