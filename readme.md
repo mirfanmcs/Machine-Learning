@@ -13,3 +13,8 @@ Provides implementation in:
 * Linear Regression with One Variable
 * Linear Regression with Multiple Variable
 
+## Classification
+
+* Logistic Regression
+* Regularized Logistic Regression
+
