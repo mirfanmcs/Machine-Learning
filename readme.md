@@ -18,3 +18,6 @@ Provides implementation in:
 * Logistic Regression
 * Regularized Logistic Regression
 
+## Multi-class Classification
+
+* One-Vs-All Logistic Regression
