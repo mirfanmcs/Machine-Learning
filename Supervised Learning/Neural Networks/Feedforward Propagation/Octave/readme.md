@@ -106,7 +106,8 @@ Expected value: `97.520000`
 
 To give you an idea of the network's output, you can also run through the examples one at the a time to see what it is predicting.
 
-Call custom function displayPrediction
+Call custom function displayPrediction:
+
 `>>> displayPrediction(Theta1, Theta2, X)`
 
 
