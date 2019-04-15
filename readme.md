@@ -21,3 +21,7 @@ Provides implementation in:
 ## Multi-class Classification
 
 * One-Vs-All Logistic Regression
+
+## Neural Networks
+
+* Feedforward Propagation
