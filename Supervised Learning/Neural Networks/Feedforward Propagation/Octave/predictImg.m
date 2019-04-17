@@ -1,5 +1,5 @@
 function p = predictImg(Theta1, Theta2, Img)
-    #imfinfo(Img)
+    %imfinfo(Img)
     X = imread(Img); % reads the image .bmp (24 bits) (20x20)
 
     X = double(X);% converts it to double
