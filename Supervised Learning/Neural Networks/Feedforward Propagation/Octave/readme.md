@@ -65,7 +65,7 @@ Randomly select 100 data points to display
 
 We will visualize a subset of the training set. We will randomly selects selects 100 rows from X and will pass those rows to the displayData custom function. This function maps each row to a 20x20 pixel grayscale image and displays the images together.
 
-`>>> displayData(sel)`
+`>>> displayData(sel, false, '')`
 
 Note: Octave prompt shoud be in the same path where custom functions (plotData or other custom function we are going to use below) are.
 
@@ -106,12 +106,21 @@ Expected value: `97.520000`
 
 To give you an idea of the network's output, you can also run through the examples one at the a time to see what it is predicting.
 
+# Display Prediction
+
 Call custom function displayPrediction:
 
 `>>> displayPrediction(Theta1, Theta2, X)`
 
+Function will also save the number image so that we could use it to test our model 
 
 
+# Test Model 
 
+Call custom function predictImg and pass the  20x20 pixel image. Note that we save this image in previous section. 
+ 
+`>>> p = predictImg(Theta1, Theta2, './predict-images/8.png')`
 
+Expected value: `8`
 
+Test for all images `0-9`. Node that for `0`, model will return `10` but we will print `0`.
