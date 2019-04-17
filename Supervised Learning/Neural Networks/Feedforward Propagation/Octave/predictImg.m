@@ -19,3 +19,4 @@ function p = predictImg(Theta1, Theta2, Img)
 
     fprintf('\nImage is number: %d\n', p);
 
+end
