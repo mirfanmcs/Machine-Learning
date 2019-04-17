@@ -1,4 +1,4 @@
-function [h, display_array] = displayData(X, example_width)
+function [h, display_array] = displayData(X, saveimage, filename,example_width)
 %DISPLAYDATA Display 2D data in a nice grid
 %   [h, display_array] = DISPLAYDATA(X, example_width) displays 2D data
 %   stored in X in a nice grid. It returns the figure handle h and the 
@@ -50,6 +50,10 @@ end
 
 % Display Image
 h = imagesc(display_array, [-1 1]);
+
+if(saveimage)
+	imwrite(resize(display_array, 20, 20),filename)
+end
 
 % Do not show axis
 axis image off
