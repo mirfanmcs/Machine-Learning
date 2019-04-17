@@ -144,3 +144,12 @@ Expected first 4 values of &Theta;: `-3.3122`, `-3.2533`, `-5.0287`, `-2.3967`
 
 Expected value: `95.140000`
 
+# Test Model 
+
+Call custom function predictImg and pass the  20x20 pixel image. Note that we generated these images in Neural Networks Octave implementation. 
+ 
+`>>> p = predictImg(all_theta, './predict-images/3.png')`
+
+Expected value: `3`
+
+Test for all images `0-9`. Node that for `0`, model will return `10` but we will print `0`.
