@@ -1,7 +1,7 @@
 import loadData as data
 import numpy as np
 import predict as pred
-import scipy.misc
+#import scipy.misc
 import imageio
 
 def predictImg(Theta1, Theta2, Img):
