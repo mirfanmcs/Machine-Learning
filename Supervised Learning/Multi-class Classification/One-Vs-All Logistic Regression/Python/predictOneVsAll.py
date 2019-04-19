@@ -14,6 +14,8 @@ def calculatePredictOneVsAll(all_theta, X):
     #   of values from 1..K (e.g., p = [1; 3; 1; 2] predicts classes 1, 3, 1, 2
     #   for 4 examples)
 
+    X = np.insert(X, 0, 1, axis=1)
+
     probs = sig.sigmoid(X.dot(all_theta.T))
 
     # Adding one because Python uses zero based indexing for the 10 columns (0-9),
@@ -21,11 +23,10 @@ def calculatePredictOneVsAll(all_theta, X):
     return (np.argmax(probs, axis=1) + 1)
 
 def predictOneVsAll():
-    X = np.insert(data.X, 0, 1, axis=1)
     lmda = 0.1
     num_labels = 10
     theta = onevAll.oneVsAll(num_labels, lmda)
-    p = calculatePredictOneVsAll(theta, X)
+    p = calculatePredictOneVsAll(theta, data.X)
     return p
 
 def main():
