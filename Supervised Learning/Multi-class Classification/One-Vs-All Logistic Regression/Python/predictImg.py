@@ -1,14 +1,15 @@
-import loadData as data
 import numpy as np
 import predictOneVsAll as pred
-import scipy.misc
+# import scipy.misc
+import imageio
 
 import oneVsAll as onevAll
 
 
 def predictImg(Theta, Img):
 
-    X = scipy.misc.imread(Img)
+    # X = scipy.misc.imread(Img)
+    X = imageio.imread(Img)
 
     X = np.double(X)  # converts it to double
     temp = np.copy(X)   # creates a copy for later use
