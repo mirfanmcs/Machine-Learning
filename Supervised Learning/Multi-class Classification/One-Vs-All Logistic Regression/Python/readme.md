@@ -105,3 +105,15 @@ Script will call the computeAccuracy function which will do following:
 
 Expected value: `95.08`
 
+
+# Test Model 
+
+Call custom function predictImg and pass the  20x20 pixel image. Note that we generated these images in Neural Networks Octave implementation. 
+ 
+ `$ python3 predictImg.py`
+
+
+Expected value: `4`
+
+Test for all images `0-9`. Node that for `0`, model will return `10` but we will print `0`.
+
