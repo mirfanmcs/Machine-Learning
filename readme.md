@@ -25,3 +25,4 @@ Provides implementation in:
 ## Neural Networks
 
 * Feedforward Propagation
+* Neural Networks Learning - Backpropagation
