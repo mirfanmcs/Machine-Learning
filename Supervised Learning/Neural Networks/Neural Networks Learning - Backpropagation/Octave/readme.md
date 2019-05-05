@@ -132,7 +132,7 @@ If your backpropagation implementation is correct, then the relative difference 
 
 Expected Relative Difference: `2.33553e-11`
 
-## Check gradients for &lambda;=1
+## Check gradients for &lambda;=3
 
 `>>> lambda = 3;`
 `>>> checkNNGradients(lambda);`
