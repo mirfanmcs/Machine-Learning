@@ -135,6 +135,7 @@ Expected Relative Difference: `2.33553e-11`
 ## Check gradients for &lambda;=3
 
 `>>> lambda = 3;`
+
 `>>> checkNNGradients(lambda);`
 
 Expected Relative Difference: `2.25401e-11`
