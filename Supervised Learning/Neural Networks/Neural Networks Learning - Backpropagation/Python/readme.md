@@ -66,7 +66,7 @@ Expected value: `0.19661193, 0.23500371, 0.25, 0.23500371, 0.19661193`
 `utility.py` module implements `unrollParameters` function.
 
 
-# Compute Cost (Feedforward)
+# Compute Cost
 
 We will implement the cost function using feedforward and then use backpropagation to calculate gradient. 
 
