@@ -98,9 +98,18 @@ Expected values for `(-24,0.2,0.2)`:
 * Value of gradient:  `0.04290299`, `2.56623412`, `2.64679737`
 
 
-# Gradient descent 
+# Train Model - Gradient descent 
 
-Gradient descent is used to minimize cost function J(&theta;).
+We will use Gradient descent to minimize cost function J(&theta;) and use it to train our model.
+
+Gradient descent is used to minimize cost function J(&theta;). 
+
+Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
+
+This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x).
+
+Note: For large data set, we train model once and save the parameters &theta; We use these saved parameters later for prediction. 
+
 
 Run gradientDescent.py from command prompt: 
 
@@ -114,9 +123,6 @@ Script will call the gradientDescent function with following values:
 
 Function will first normalize X and then add 1 as first column to normalized X for x<sub>o</sub> = 1.
 
-Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
-
-This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
 
 Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) = `(1.71835438, 3.99258451, 3.72493998)`
 
@@ -141,9 +147,10 @@ Script will call the plotConvergence function which will do following:
 
 # Advanced Optimization
 
-Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent.
+Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent. We will use this technique and use `minimize` function of `scipy` library to train our model to get tained values of values of &theta;
 
-We are going to call `minimize` function of `scipy` library to get the optimized values of &theta;
+Note: For large data set, we train model once and save the parameters &theta; We use these saved parameters later for prediction. 
+
 
 Run optimizeTheta.py from command prompt:
 
@@ -151,6 +158,7 @@ Run optimizeTheta.py from command prompt:
 
 Script will call the optimizeTheta function which will do following:
 * Call `minimize` of `scipy` library and pass costFunction to calculate cost 
+* Return trained parameters &theta;
 
 Expected value of cost: `0.2034977`
 
@@ -172,7 +180,7 @@ Script will call the plotDecisionBoundary function which will do following:
 
 
 # Prediction
-Using calculated h<sub>&theta;</sub>(x)
+We will use the parameter &theta; we trained earlier. We wil apply &theta; to the following model to calculate h<sub>&theta;</sub>(x) which will be the predicted value for new data set.
 
 h<sub>&theta;</sub>(x) = g(&theta;<sup>T</sup> x)
 
@@ -194,7 +202,7 @@ Predict the probability that a student with score 45 on exam 1 and score 85 on e
 Furthermore, we will compute the training and test set accuracies of our model.
 
 
-### Calling using Grdient Descent &theta; parameters
+### Calling using Grdient Descent trained &theta; parameters
 
 Run predictBasedOnGradientDescent.py from command prompt: 
 
@@ -203,7 +211,7 @@ Run predictBasedOnGradientDescent.py from command prompt:
 
 Expected value: Admission probability of `1` for a student with scores 45 and 85
 
-### Calling using Advanced Optimization &theta; parameters
+### Calling using Advanced Optimization trained &theta; parameters
 
 Run predictBasedOnAdvancedOptmization.py from command prompt: 
 
@@ -219,7 +227,7 @@ Run computeAccuracy.py from command prompt:
 `$ python3 computeAccuracy.py`
 
 Script will call the computeAccuracy function which will do following:
-* Call optimizeTheta in optimizeTheta.py module to get the optimized value of &theta;
+* Call optimizeTheta in optimizeTheta.py module to get train model and get trained values of &theta;
 * Predict value and compute accuracy
 
 Expected value: `89.0`
