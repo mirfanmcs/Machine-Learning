@@ -145,7 +145,7 @@ Script will call the plotConvergence function which will do following:
 ![Plot](figures/figure3.png)
 
 
-# Advanced Optimization
+# Train Model - Advanced Optimization
 
 Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent. We will use this technique and use `minimize` function of `scipy` library to train our model to get tained values of values of &theta;
 
