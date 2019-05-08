@@ -166,7 +166,7 @@ Call custom function randInitializeWeights to randomly select &theta; for &epsil
 
 You have now implemented all the code necessary to train a neural network. To train your neural network, we will now use advanced optimizing technique and use "fmincg" funciton, which is a function which works similarly to "fminunc". Note that these advanced optimizers are able to train our cost functions efficiently as long as we provide them with the gradient computations.
 
-Note: For large data set, we train model once and save the parameters &Theta;. We will use these saved parameters later for prediction. 
+Note: For large data set, we train model once and save the parameters &Theta;. We then use these saved parameters later for prediction. 
 
 
 `>>> options = optimset('MaxIter', 50);`
