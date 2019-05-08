@@ -90,8 +90,16 @@ Expected value: `32.073`
 Expected value: `54.242`
 
 
-# Gradient descent 
-Gradient descent is used to minimize cost function J(&theta;).
+# Train Model - Gradient descent 
+
+We will use Gradient descent to minimize cost function J(&theta;) and use it to train our model.
+
+Gradient descent is used to minimize cost function J(&theta;). 
+
+Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
+
+This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
+
 
 ### Initialize X and y
 `>>> X = [ones(length(data),1),data(:,1)]`
@@ -107,11 +115,6 @@ Gradient descent is used to minimize cost function J(&theta;).
 `>>> alpha = 0.01`
 
 `>>> [theta, J_history] = gradientDescent(X, y, theta, alpha, iterations)`
-
-
-Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
-
-This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
 
 
 Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.6303, 1.1664)`
@@ -157,7 +160,8 @@ Calculate h<sub>&theta;</sub>(x) with calculated &theta; value above.
 
 
 # Prediction
-Using calculated h<sub>&theta;</sub>(x)
+
+We will use the parameter &theta; we trained using gradient descent. We wil apply &theta; following model to calculate h<sub>&theta;</sub>(x) to predict value.
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub>
 
