@@ -55,8 +55,15 @@ Expected value for (0,0,0): `65591548106.45744`
 Expected value for (-1,2,3): `65591516892.34798`
 
 
-# Gradient descent 
-Gradient descent is used to minimize cost function J(&theta;).
+# Train Model - Gradient descent 
+We will use Gradient descent to minimize cost function J(&theta;) and use it to train our model.
+
+Gradient descent is used to minimize cost function J(&theta;). 
+
+Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
+
+This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
+
 
 Run gradientDescent.py from command prompt: 
 
@@ -101,8 +108,8 @@ Script will call the plotConvergence function which will do following:
 
 Estimate the price of a 1650 sq-ft, 3 bedroom house using Gradient Descent.
 
+We will use the parameter &theta; we trained using gradient descent. We wil apply &theta; to the following model to calculate h<sub>&theta;</sub>(x) which will be the predicted value for new data set.
 
-Using calculated h<sub>&theta;</sub>(x):
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>1</sub>x<sub>1</sub>
 
@@ -114,8 +121,8 @@ Run predictBasedOnGradientDescent.py from command prompt:
 Script will call the predictBasedOnGradientDescent function which will do following:
 * Call featureNormalize function from featureNormalize.py to get mu and sigma
 * Normalize prediction values (1650,3)
-* Call gradientDescent function from gradientDescent.py module to calculate minimum of cost function J(&theta;) and return &theta;<sub>o</sub>, &theta;<sub>1</sub>, and &theta;<sub>2</sub>. 
-* Calculate  h<sub>&theta;</sub>(x) using h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>2</sub>x<sub>2</sub>
+* Call gradientDescent function from gradientDescent.py module to train model and get trained parameters &theta;<sub>o</sub>, &theta;<sub>1</sub>. 
+* Apply trained parameters on model h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>1</sub>x<sub>1</sub> to calculate h<sub>&theta;</sub>(x) which will be the predicted value for new data set
 
 
 Expected value: `293098.46667577`
