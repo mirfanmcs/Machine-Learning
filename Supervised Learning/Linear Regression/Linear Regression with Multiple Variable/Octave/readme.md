@@ -130,11 +130,6 @@ Normalize features:
 `>>> [theta, J_history] = gradientDescent(X, y, theta, alpha, iterations)`
 
 
-Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
-
-This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
-
-
 Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) = `(340412.56301, 110540.56655, -6558.99055)`
 
 
