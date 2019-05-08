@@ -227,7 +227,7 @@ Run computeAccuracy.py from command prompt:
 `$ python3 computeAccuracy.py`
 
 Script will call the computeAccuracy function which will do following:
-* Call optimizeTheta in optimizeTheta.py module to get train model and get trained values of &theta;
+* Call optimizeTheta in optimizeTheta.py module to train model and get trained values of &theta;
 * Predict value and compute accuracy
 
 Expected value: `89.0`
