@@ -105,6 +105,8 @@ Initialize each &Theta; to a random value in [- &epsilon;, &epsilon;] i.e. -&eps
 
 You have now implemented all the code necessary to train a neural network. To train your neural network, we will now use advanced optimizing technique and use "minimize" funciton, which is a function which works similarly to "fminunc". Note that these advanced optimizers are able to train our cost functions efficiently as long as we provide them with the gradient computations.
 
+
+
 `trainNN.py` module implements `trainNN` function. Function will train Neural Network for &lambda;=1 and `200` iterations. We will call this function in prediction. 
 
 `trainNN` function will save trained parameters &Theta; in `trainedTheta.npy` file.
@@ -141,7 +143,7 @@ Run computeAccuracy.py from command prompt:
 `$ python3 computeAccuracy.py`
 
 Script will call the computeAccuracy function which will do following:
-* Call `predict` function in `predict.py` module
+* Call `predict` function in `predict.py` module and use save parameters &Theta;
 * Calculate training set accuracy
 
 
@@ -150,7 +152,7 @@ Expected value: `99.14`
 
 # Test Model 
 
-Call custom function `predictImg` and pass the  20x20 pixel image. Note that we generated these images in Neural Networks Octave implementation. 
+Call custom function `predictImg` and pass the  20x20 pixel image. Note that we generated these images in Neural Networks Octave implementation. We will used saved trained parameters &Theta;.
  
  `$ python3 predictImg.py`
 
