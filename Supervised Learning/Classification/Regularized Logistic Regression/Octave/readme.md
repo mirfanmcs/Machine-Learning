@@ -125,7 +125,7 @@ Expected value of first 5 gradient:  `0.346045`, `0.161352`, `0.194796`, `0.2268
 
 Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent. We will use this technique and use `fminunc` funciton to train our model to get tained values of values of &theta;
 
-Note: For large data set, we train model once and save the parameters &theta;. We will use these saved parameters later for prediction. 
+Note: For large data set, we train model once and save the parameters &theta;. We then use these saved parameters later for prediction. 
 
 
 `>>> initial_theta = zeros(size(X, 2), 1)`
