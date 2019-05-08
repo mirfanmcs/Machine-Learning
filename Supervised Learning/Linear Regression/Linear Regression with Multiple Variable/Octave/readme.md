@@ -95,8 +95,15 @@ Expected value: `65591548106.45744`
 Expected value: `65591516892.34798`
 
 
-# Gradient descent 
-Gradient descent is used to minimize cost function J(&theta;).
+# Train Model - Gradient descent 
+We will use Gradient descent to minimize cost function J(&theta;) and use it to train our model.
+
+Gradient descent is used to minimize cost function J(&theta;). 
+
+Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
+
+This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
+
 
 ### Initialize X and y
 
@@ -156,7 +163,8 @@ Find learning rates (&alpha;) that converges quickly. In our example we choose &
 Estimate the price of a 1650 sq-ft, 3 bedroom house using Gradient Descent.
 
 
-Using calculated h<sub>&theta;</sub>(x):
+We will use the parameter &theta; we trained using gradient descent. We wil apply &theta; to the following model to calculate h<sub>&theta;</sub>(x) which will be the predicted value for new data set.
+
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub> + &theta;<sub>1</sub>x<sub>1</sub>
 
