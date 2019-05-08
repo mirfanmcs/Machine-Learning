@@ -77,9 +77,6 @@ Script will call the gradientDescent function with following values:
 
 Function will first normalize X and then add 1 as first column to normalized X for x<sub>o</sub> = 1.
 
-Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
-
-This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
 
 Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) = `(340412.56301439, 109370.05670466, -6500.61509507)`
 
