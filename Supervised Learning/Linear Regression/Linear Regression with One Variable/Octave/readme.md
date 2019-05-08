@@ -161,7 +161,7 @@ Calculate h<sub>&theta;</sub>(x) with calculated &theta; value above.
 
 # Prediction
 
-We will use the parameter &theta; we trained using gradient descent. We wil apply &theta; following model to calculate h<sub>&theta;</sub>(x) to predict value.
+We will use the parameter &theta; we trained using gradient descent. We wil apply &theta; to the following model to calculate h<sub>&theta;</sub>(x) which will be the predicted value for new data set.
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub>
 
