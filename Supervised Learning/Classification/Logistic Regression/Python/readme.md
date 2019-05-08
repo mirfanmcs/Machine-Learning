@@ -108,7 +108,7 @@ Cost function J(&theta;) will decrease and at the end of iterations will give co
 
 This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x).
 
-Note: For large data set, we train model once and save the parameters &theta; We use these saved parameters later for prediction. 
+Note: For large data set, we train model once and save the parameters &theta;. We use these saved parameters later for prediction. 
 
 
 Run gradientDescent.py from command prompt: 
@@ -149,7 +149,7 @@ Script will call the plotConvergence function which will do following:
 
 Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent. We will use this technique and use `minimize` function of `scipy` library to train our model to get tained values of values of &theta;
 
-Note: For large data set, we train model once and save the parameters &theta; We use these saved parameters later for prediction. 
+Note: For large data set, we train model once and save the parameters &theta;. We use these saved parameters later for prediction. 
 
 
 Run optimizeTheta.py from command prompt:
