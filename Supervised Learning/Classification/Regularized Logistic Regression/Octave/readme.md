@@ -121,9 +121,12 @@ Expected value of cost J: `3.1645`
 
 Expected value of first 5 gradient:  `0.346045`, `0.161352`, `0.194796`, `0.226863`, `0.092186`
 
-# Advanced Optimization
+# Train Model - Advanced Optimization
 
-Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent.
+Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent. We will use this technique and use `fminunc` funciton to train our model to get tained values of values of &theta;
+
+Note: For large data set, we train model once and save the parameters &theta; We use these saved parameters later for prediction. 
+
 
 `>>> initial_theta = zeros(size(X, 2), 1)`
 
@@ -183,7 +186,9 @@ Call custom function regularizeAndPlotData
 ![Plot](figures/figure5.png)
 
 # Prediction
-Using calculated h<sub>&theta;</sub>(x)
+
+We will use the parameter &theta; we trained earlier. We wil apply &theta; to the following model to calculate h<sub>&theta;</sub>(x) which will be the predicted value for new data set.
+
 
 h<sub>&theta;</sub>(x) = g(&theta;<sup>T</sup> x)
 
@@ -202,7 +207,7 @@ h<sub>&theta;</sub>(x) = X * &theta;
 
 Predict the probability that microchip test 0.5 and 0.3 will be Accepted.
 
-Plot for &lambda; = 1 seems best fit so we will use &theta; values of this &lambda; value. 
+Plot for &lambda; = 1 seems best fit so we will use trained &theta; values of this &lambda; value. 
 
 Map the features into all polynomial terms of x<sub>1</sub> and x<sub>2</sub> up to the sixth power.
 
@@ -215,6 +220,8 @@ Expected value: Accepted probability of `0.72698` for a microchip test 0.5 and 0
 
 ## Calling using predict custom function which will call sigmoid function and round off the result to get either 0 or 1:
 
+We will used trained parameter &theta;
+
 `>>> prob = predict(theta, predict_X)`
 
 Expected value: Accepted probability of `1` for a microchip test 0.5 and 0.3 
@@ -223,7 +230,7 @@ Expected value: Accepted probability of `1` for a microchip test 0.5 and 0.3
 
 # Compute accuracy on our training set
 
-Plot for &lambda; = 1 seems best fit so we will use &theta; values of this &lambda; value. 
+Plot for &lambda; = 1 seems best fit so we will use trained &theta; values of this &lambda; value. 
 
 `>>> p = predict(theta, X)`
 
