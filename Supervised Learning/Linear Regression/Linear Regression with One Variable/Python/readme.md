@@ -56,7 +56,7 @@ Cost function J(&theta;) will decrease and at the end of iterations will give co
 
 This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
 
-Note: For large data set, we train model once and save the parameters &theta;. We will use these saved parameters later for prediction. 
+Note: For large data set, we train model once and save the parameters &theta;. We then use these saved parameters later for prediction. 
 
 
 Run gradientDescent.py from command prompt: 
