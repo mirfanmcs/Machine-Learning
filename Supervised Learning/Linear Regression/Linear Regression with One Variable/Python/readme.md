@@ -47,8 +47,15 @@ Expected value for (0,0): `32.07273388`
 Expected value for (-1,2): `54.24245508`
 
 
-# Gradient descent 
-Gradient descent is used to minimize cost function J(&theta;).
+# Train Model -  Gradient descent 
+We will use Gradient descent to minimize cost function J(&theta;) and use it to train our model.
+
+Gradient descent is used to minimize cost function J(&theta;). 
+
+Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
+
+This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
+
 
 Run gradientDescent.py from command prompt: 
 
@@ -59,11 +66,6 @@ Script will call the gradientDescent function with following values:
 * (&theta;<sub>o</sub>, &theta;<sub>1</sub>) =  `(0,0)`  
 * iterations = `1500`
 * &alpha; = `0.01`
-
-
-Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
-
-This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
 
 
 Expected value of &theta; (&theta;<sub>o</sub>, &theta;<sub>1</sub>) = `(-3.63029144, 1.16636235)`
@@ -101,7 +103,7 @@ Script will call the plot_H_Theta function which will do following:
 
 
 # Prediction
-Using calculated h<sub>&theta;</sub>(x)
+We will use the parameter &theta; we trained using gradient descent. We wil apply &theta; following model to calculate h<sub>&theta;</sub>(x) to predict value.
 
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub>
 
@@ -111,8 +113,8 @@ Run predict.py from command prompt:
 
 Script will call the predict function which will do following:
 
-* Call gradientDescent function from gradientDescent.py module to calculate minimum of cost function J(&theta;) and return &theta;<sub>o</sub>, &theta;<sub>1</sub>. 
-* Calculate  h<sub>&theta;</sub>(x) using h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub>
+* Call gradientDescent function from gradientDescent.py module to train model and get trained parameters &theta;<sub>o</sub>, &theta;<sub>1</sub>. 
+* Apply trained parameters on model h<sub>&theta;</sub>(x) = &theta;<sub>o</sub>x<sub>o</sub>  + &theta;<sub>1</sub>x<sub>1</sub> to calculate h<sub>&theta;</sub>(x) which will be the predicted value for new data set. 
 
 Expected value for  (x<sub>o</sub>,</sub>x<sub>1</sub>) (1, 3.5): `0.45197679`
 
