@@ -75,7 +75,7 @@ To check the current path run `pwd` in Octave prompt. You can use normal linux c
 
 We are going to use network parameters (&Theta;<sup>(1)</sup>, &Theta;<sup>(2)</sup>) which are already trained by us. These are stored in `weights.mat` and will be loaded into Theta1 and Theta2. The parameters have dimensions that are sized for a neural network with 25 units in the second layer and 10 output units (corresponding to the 10 digit classes).
 
-% Load the weights into variables Theta1 and Theta2
+Load the weights into variables Theta1 and Theta2
 
 `>>> load('weights.mat')`
 
@@ -155,6 +155,7 @@ Initialize each &Theta; to a random value in [- &epsilon;, &epsilon;] i.e. -&eps
 Call custom function randInitializeWeights to randomly select &theta; for &epsilon;= 0.12
 
 `>>> initial_Theta1 = randInitializeWeights(input_layer_size, hidden_layer_size);`
+
 `>>> initial_Theta2 = randInitializeWeights(hidden_layer_size, num_labels);`
 
 ## Unroll parameters
@@ -164,6 +165,8 @@ Call custom function randInitializeWeights to randomly select &theta; for &epsil
 # Training Neural Network 
 
 You have now implemented all the code necessary to train a neural network. To train your neural network, we will now use advanced optimizing technique and use "fmincg" funciton, which is a function which works similarly to "fminunc". Note that these advanced optimizers are able to train our cost functions efficiently as long as we provide them with the gradient computations.
+
+Note: For large data set, we train model once and save the parameters &Theta;. We use these saved parameters later for prediction. 
 
 
 `>>> options = optimset('MaxIter', 50);`
@@ -200,7 +203,7 @@ We can now "visualize" what the neural network is learning by displaying the hid
 
 # Prediction
 
-After training the neural network, we would like to use it to predict the labels. We will call "predict" custom function to use the neural network to predict the labels of the training set. This lets you compute the training set accuracy.
+After training the neural network, we would like to use it to predict the labels. We will call "predict" custom function to use the neural network to predict the labels of the training set. This lets you compute the training set accuracy. We will use trained &Theta; we used above to predict for data set. 
 
 `>>> pred = predict(Theta1, Theta2, X);`
 
@@ -218,7 +221,8 @@ Expected value: `94.900000`
 
 # Test Model 
 
-Call custom function predictImg and pass the  20x20 pixel image. Note that we save this image in previous section. 
+Call custom function predictImg and pass the  20x20 pixel image. Note that we save this image in previous section. We will use trained &Theta; we used above to predict for data set. 
+
  
 `>>> p = predictImg(Theta1, Theta2, './predict-images/8.png')`
 
