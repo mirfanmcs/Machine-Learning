@@ -70,11 +70,11 @@ Script will call the costFunctionReg function which will do following:
 * Calculate cost for &lambda; values `1` and `10`
 * Expected values `0.69314718`, `3.16450933`
 
-# Advanced Optimization
+# Train Model - Advanced Optimization
 
-Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent.
+Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent. We will use this technique and use `minimize` function of `scipy` library to train our model to get tained values of values of &theta;
 
-We are going to call `minimize` function of `scipy` library to get the optimized values of &theta;
+Note: For large data set, we train model once and save the parameters &theta; We use these saved parameters later for prediction. 
 
 Run optimizeTheta.py from command prompt:
 
@@ -82,6 +82,7 @@ Run optimizeTheta.py from command prompt:
 
 Script will call the optimizeTheta function which will do following:
 * Call `minimize` of `scipy` library and pass costFunctionReg to calculate cost for &lambda; = 1 
+* * Return trained parameters &theta;
 
 Expected value of cost: `0.52900273`
 
@@ -126,7 +127,9 @@ Script will call the plotDecisionBoundary function which will do following:
 ![Plot](figures/figure5.png)
 
 # Prediction
-Using calculated h<sub>&theta;</sub>(x)
+
+We will use the parameter &theta; we trained earlier. We wil apply &theta; to the following model to calculate h<sub>&theta;</sub>(x) which will be the predicted value for new data set.
+
 
 h<sub>&theta;</sub>(x) = g(&theta;<sup>T</sup> x)
 
@@ -145,7 +148,7 @@ h<sub>&theta;</sub>(x) = X * &theta;
 
 Predict the probability that microchip test 0.5 and 0.3 will be Accepted.
 
-Plot for &lambda; = 1 seems best fit so we will use &theta; values of this &lambda; value. 
+Plot for &lambda; = 1 seems best fit so we will use trained &theta; values of this &lambda; value. 
 
 Map the features into all polynomial terms of x<sub>1</sub> and x<sub>2</sub> up to the sixth power.
 
@@ -156,7 +159,7 @@ Run predict.py from command prompt:
 
 Script will call the predict function which will do following:
 * Call `mapFeature` in `mapFeature.py` module to map features `0.5` and `0.3`
-* Call `optimizeTheta` in `optimizeTheta.py` module to get optimized values of &theta; for &lambda; = 1
+* Call `optimizeTheta` in `optimizeTheta.py` module to train model and get trained values of  &theta; for &lambda; = 1
 * Call `sigmoid` in `sigmoid.py` to predict value
 
 
@@ -165,7 +168,7 @@ Expected value: Accepted probability of `0.72710959` for a microchip test 0.5 an
 
 # Compute accuracy on our training set
 
-Plot for &lambda; = 1 seems best fit so we will use &theta; values of this &lambda; value. 
+Plot for &lambda; = 1 seems best fit so we will use trained &theta; values of this &lambda; value. 
 
 Run computeAccuracy.py from command prompt:
 
@@ -173,7 +176,7 @@ Run computeAccuracy.py from command prompt:
 
 Script will call the computeAccuracy function which will do following:
 * Call `mapFeature` in `mapFeature.py` module to map features X in training example 
-* Call `optimizeTheta` in `optimizeTheta.py` module to get optimized values of &theta; for &lambda; = 1
+* Call `optimizeTheta` in `optimizeTheta.py` module to train model and get trained values of  &theta; for &lambda; = 1
 * Call `sigmoid` in `sigmoid.py` to predict value
 * Compute accuracy
 
