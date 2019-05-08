@@ -134,7 +134,17 @@ Expected value of gradient:  `0.042903`, `2.566234`, `2.646797`
 
 
 
-# Gradient descent 
+# Train Model - Gradient descent 
+
+We will use Gradient descent to minimize cost function J(&theta;) and use it to train our model.
+
+Gradient descent is used to minimize cost function J(&theta;). 
+
+Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
+
+This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
+
+Note: For large data set, we train model once and save the parameters &theta; We use these saved parameters later for prediction. 
 
 ## Feature Normalization/Scaling
 
@@ -170,11 +180,6 @@ Gradient descent is used to minimize cost function J(&theta;).
 `>>> alpha = 0.01`
 
 `>>> [theta_gd, J_history] = gradientDescent(X, y, initial_theta, alpha, iterations)`
-
-
-Cost function J(&theta;) will decrease and at the end of iterations will give constant same values. That will be the local minimum. 
-
-This will give the parameters (value of &theta;) to be used for hypothesis h<sub>&theta;</sub>(x)
    
 
 Expected value of &theta; is (&theta;<sub>o</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>) = `(1.7183,  4.0127, 3.7437)`
@@ -199,11 +204,12 @@ Find learning rates (&alpha;) that converges quickly. In our example we choose &
 ![Plot](figures/figure3.png)
 
 
-# Advanced Optimization
+# Train Model - Advanced Optimization
 
-Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent.
+Use of advanced optimization algorithms is another technique to optimize cost function instead of calling Gradient descent. We will use this technique and use `fminunc` funciton to train our model to get tained values of values of &theta;
 
-We are going to use fminunc to get the optimized values of &theta;
+Note: For large data set, we train model once and save the parameters &theta; We use these saved parameters later for prediction. 
+
 
 ### Initialize X and y
 
@@ -247,7 +253,9 @@ Expected value of (&theta;<sub>0</sub>, &theta;<sub>1</sub>, &theta;<sub>2</sub>
 
 
 # Prediction
-Using calculated h<sub>&theta;</sub>(x)
+
+We will use the parameter &theta; we trained earlier. We wil apply &theta; to the following model to calculate h<sub>&theta;</sub>(x) which will be the predicted value for new data set.
+
 
 h<sub>&theta;</sub>(x) = g(&theta;<sup>T</sup> x)
 
@@ -269,13 +277,13 @@ Predict the probability that a student with score 45 on exam 1 and score 85 on e
 Furthermore, we will compute the training and test set accuracies of our model.
 
 
-### Calling using Grdient Descent &theta; parameters
+### Calling using Grdient Descent trained &theta; parameters
 
 `>>> prob_gd = sigmoid([1 45 85] * theta_gd)`
 
 Expected value: Admission probability of `1` for a student with scores 45 and 85
 
-### Calling using Advanced Optimization `fminunc` &theta; parameters
+### Calling using Advanced Optimization `fminunc` trained &theta; parameters
 
 `>>> prob_ao = sigmoid([1 45 85] * theta_ao)`
 
@@ -284,13 +292,13 @@ Expected value: Admission probability of `0.77629` for a student with scores 45 
 
 ## Calling using predict custom function which will call sigmoid function and round off the result to get either 0 or 1:
 
-### Calling using Grdient Descent &theta; parameters
+### Calling using Grdient Descent trained &theta; parameters
 
 `>>> prob_gd = predict(theta_gd,[1 45 85])`
 
 Expected value: Admission probability of `1` for a student with scores 45 and 85
 
-### Calling using Advanced Optimization `fminunc` &theta; parameters
+### Calling using Advanced Optimization `fminunc` trained &theta; parameters
 
 `>>> prob_ao = predict(theta_ao,[1 45 85])`
 
@@ -299,7 +307,7 @@ Expected value: Admission probability of `1` for a student with scores 45 and 85
 
 ## Compute accuracy on our training set:
 
-### Calling using Grdient Descent &theta; parameters
+### Calling using Grdient Descent trained &theta; parameters
 
 `>>> p_gd = predict(theta_gd, X)`
 
@@ -307,7 +315,7 @@ Expected value: Admission probability of `1` for a student with scores 45 and 85
 
 Expected value: `89.0`
 
-### Calling using Advanced Optimization `fminunc` &theta; parameters
+### Calling using Advanced Optimization `fminunc` trained &theta; parameters
 
 `>>> p_ao = predict(theta_ao, X)`
 
