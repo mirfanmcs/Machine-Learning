@@ -12,6 +12,7 @@ Provides implementation in:
 
 * Linear Regression with One Variable
 * Linear Regression with Multiple Variable
+* Regularized Linear Regression and Bias-vs-Variance
 
 ## Classification
 
