@@ -260,7 +260,7 @@ We can try to run the code with different values of &lambda; to see how the fit 
 
 `>>> lambda = 0;`
 
-`>>> [theta, error_train, error_val] =  learningCurveForPolynomial(X_poly, X_poly_val, yval, X, y, lambda, mu, sigma, theta, p, m)`
+`>>> [theta, error_train, error_val] =  learningCurveForPolynomial(X_poly, X_poly_val, yval, X, y, lambda, mu, sigma, p, m)`
 
 
 ![Plot](figures/figure4.png)
@@ -312,7 +312,8 @@ Expected value of `error_val`:
 
 `>>> lambda = 1;`
 
-`>>> [theta, error_train, error_val] =  learningCurveForPolynomial(X_poly, X_poly_val, yval, X, y, lambda, mu, sigma, theta, p, m)`
+`>>> [theta, error_train, error_val] =  learningCurveForPolynomial(X_poly, X_poly_val, yval, X, y, lambda, mu, sigma, p, m)`
+
 
 
 ![Plot](figures/figure6.png)
@@ -363,7 +364,7 @@ Expected value of `error_val`:
 
 `>>> lambda = 100;`
 
-`>>> [theta, error_train, error_val] =  learningCurveForPolynomial(X_poly, X_poly_val, yval, X, y, lambda, mu, sigma, theta, p, m)`
+`>>> [theta, error_train, error_val] =  learningCurveForPolynomial(X_poly, X_poly_val, yval, X, y, lambda, mu, sigma, p, m)`
 
 
 ![Plot](figures/figure8.png)
