@@ -15,7 +15,7 @@ Once in Octave prompt, change the prompt to `>>>` using below command:
 
 `PS1('>>>')`
 
-# Goad
+# Goal
 We will implement regularized linear regression and use it to study models with different bias-variance properties. First, we will implement regularized linear regression to predict the amount of water flowing out of a dam using the change of water level in a reservoir. Next, we will go through some diagnostics of debugging learning algorithms and examine the effects of bias v.s. variance.
 
 
@@ -410,7 +410,7 @@ Expected value of `error_val`:
     60.410
     57.842`
 
-## Conslustion 
+## Conclustion 
 
 For &lambda;=`1`, you should see that the polynomial fit is able to follow the datapoints very well,thus, obtaining a low training error. However, the polynomial fit is very complex and even drops off at the extremes. This is an indicator that the polynomial regression model is overfitting the training data and will not generalize well.
 
