@@ -18,6 +18,7 @@ Provides implementation in:
 
 * Logistic Regression
 * Regularized Logistic Regression
+* Support Vector Machines
 
 ## Multi-class Classification
 
